@@ -1,9 +1,9 @@
 {
-  "name": "mpvue-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "my-project",
+  "description": "{{ description }}",
   "main": "index.js",
-  "author": "zhengzhirong",
+  "author": "{{ author }}",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist/*",
@@ -56,14 +56,14 @@
     "webpack-dev-server": "^2.6.1",
     "webpack-hot-middleware": "^2.18.2",
     "webpack-merge": "^4.1.1",
+    "express": "^4.16.3",
+    "portfinder": "^1.0.13",
+    "webpack-dev-middleware-hard-disk": "^1.12.0",
+    "vue-style-loader": "^4.1.0",
     "webpack-mpvue-asset-plugin": "0.0.2"
   },
   "dependencies": {
-    "express": "^4.16.3",
     "mpvue": "^1.0.8",
-    "portfinder": "^1.0.13",
-    "vue-style-loader": "^4.1.0",
-    "vuex": "^3.0.1",
-    "webpack-dev-middleware-hard-disk": "^1.12.0"
+    "vuex": "^3.0.1"
   }
 }

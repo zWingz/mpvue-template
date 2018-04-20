@@ -35,7 +35,7 @@ module.exports = new Promise((resolve, reject) => {
       if (port !== newPort) {
         console.log(`${port}端口被占用，开启新端口${newPort}`)
       }
-      var server = app.listen(newPort, 'localhost')
+      var server = app.listen(newPort, '{{localhost}}')
       // for 小程序的文件保存机制
       require('webpack-dev-middleware-hard-disk')(compiler, {
         publicPath: webpackConfig.output.publicPath,

@@ -33,16 +33,6 @@ module.exports = {
         author: {
             type: 'string',
             message: 'Author',
-        },
-        host: {
-            type: 'string',
-            message: 'Host',
-            default: 'localhost',
-        },
-        port: {
-            type: 'string',
-            message: 'Port',
-            default: '8080',
         }
     },
     // completeMessage: 'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/zWingz/webpack-template',

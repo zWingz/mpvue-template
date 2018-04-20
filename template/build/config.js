@@ -14,7 +14,6 @@ module.exports = {
         devtool: 'cheap-module-source-map',
     },
     dev: {
-        port: {{ port }},
         env: {
             NODE_ENV: '"development"'
         },

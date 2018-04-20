@@ -1,0 +1,16 @@
+{
+  "comments": false,
+  "env": {
+      "development": {
+          "plugins": ["transform-object-rest-spread", "syntax-dynamic-import"]
+      },
+      "production": {
+          "presets": [["es2015", {"modules": false}], "stage-2"],
+          "plugins": ["transform-runtime"]
+      },
+      "test": {
+          "presets": ["env", "stage-2"],
+          "plugins": ["transform-runtime", "istanbul"]
+      }
+  }
+}
